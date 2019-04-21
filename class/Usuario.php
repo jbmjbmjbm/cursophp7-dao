@@ -4,19 +4,11 @@ class Usuario{
 
 	private $idusuario;
 	private $deslogin;
-<<<<<<< HEAD
 	private $dessenha;
 	private $dtcadastro;
 
 	public function getIdusuario(){
 		return $this->idusuario;
-=======
-	private $desenha;
-	private $stcadstro;
-
-	public function getIdusuario(){
-		return $this->usuario;
->>>>>>> 294c66d81e198b39691e9a89dc7a2b533a2dac97
 	}
 	public function setIdusuario($value){
 		$this->idusuario = $value;
@@ -24,7 +16,6 @@ class Usuario{
 	public function getDeslogin(){
 		return $this->deslogin;
 	}
-<<<<<<< HEAD
 	public function setDeslogin($value){
 		$this->deslogin = $value;
 	
@@ -93,25 +84,3 @@ public function __toString(){
 }
 
 ?>
-=======
-	public function setLogin($value){
-		$this->deslogin = $value;
-	
-	}public function getDesenha){
-		return $this->dessenha;
-	}
-	public function setDtSenha$value){
-		$this->dessenha = $value;
-	
-	}public function getDtCadstro){
-		return $this->dtcastrado;
-	}
-	public function setIduDtCadstro($value){
-		$this->dtcastrado = $value;
-	}
-
-	$sql 
-
-}
- ?>
->>>>>>> 294c66d81e198b39691e9a89dc7a2b533a2dac97

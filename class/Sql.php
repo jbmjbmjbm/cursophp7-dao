@@ -10,34 +10,23 @@ class Sql extends PDO{
 		//("mysql:host=localhost;dbname=dbphp7", "root", "");
 
 	}
-<<<<<<< HEAD
 	
-	private function setParams($Statement, $parameters = array()){
+	private function setParams($statement, $parameters = array()){
 
 		foreach ($parameters as $key => $value) {
 			
-			$this->setParam($Statement, $key, $value);
-=======
-	private function setParams($statment, $parameters = array()){
-
-		foreach ($parameters as $key => $value) {
-			
-			$this->setParam($key, $value);
->>>>>>> 294c66d81e198b39691e9a89dc7a2b533a2dac97
+			$this->setParam($statement, $key, $value);
 		}
 
 
 	}
 
-<<<<<<< HEAD
-	private function setParam($Statement, $key, $value){
+	private function setParam($statement, $key, $value){
 
-		$Statement->bindParam($key, $value);
+		$statement->bindParam($key, $value);
 
 	}
 
-=======
->>>>>>> 294c66d81e198b39691e9a89dc7a2b533a2dac97
 	public function query($rawQuwey, $params = array()){
 
 		$stmt = $this->conn->prepare($rawQuwey);
@@ -50,12 +39,8 @@ class Sql extends PDO{
 		
 	}
 
-<<<<<<< HEAD
 	public function select($rawQuery, $params = array()):array
 	{
-=======
-	public function select($rawQuery, $params = array()):array{
->>>>>>> 294c66d81e198b39691e9a89dc7a2b533a2dac97
 
 		$stmt = $this->query($rawQuery, $params);
 
@@ -65,6 +50,6 @@ class Sql extends PDO{
 	}
 
 }
-
+ //merdsssss :)
 
  ?>

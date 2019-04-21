@@ -2,17 +2,12 @@
 
 require_once("config.php");
 
-<<<<<<< HEAD
 /*$sql = new Sql();
-=======
-$sql = new Sql();
->>>>>>> 294c66d81e198b39691e9a89dc7a2b533a2dac97
 
 $usuarios = $sql->select("SELECT * FROM tb_usuarios");
 
 echo json_encode($usuarios);
 
-<<<<<<< HEAD
 */
 //---------------------------------------------
 
@@ -42,8 +37,3 @@ echo json_encode($search);
 //merdsssss :)
 
 ?>
-=======
-
-
- ?>
->>>>>>> 294c66d81e198b39691e9a89dc7a2b533a2dac97
