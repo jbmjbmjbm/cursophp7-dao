@@ -59,6 +59,5 @@ $usuario->login("teste", "@teste");
 
 echo $usuario;
 
->>>>>>> 6563b7899245bf5e6c551b59fdd98751117d03c5
 
 ?>
