@@ -38,6 +38,7 @@ require_once("config.php");
 
 // carrega um usuario usando 0 login e senha
 
+<<<<<<< HEAD
 //$usuario = new Usuario();
 //$usuario->login("Joao", "helena@123");
 
@@ -52,5 +53,12 @@ $aluno = new Usuario("aluno", "@alun0");
 $aluno->insert();
 
 echo $aluno;
+=======
+$usuario = new Usuario();
+$usuario->login("teste", "@teste");
+
+echo $usuario;
+
+>>>>>>> 6563b7899245bf5e6c551b59fdd98751117d03c5
 
 ?>

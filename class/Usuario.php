@@ -43,8 +43,17 @@ class Usuario{
 
 	if (count($results) > 0){
 
+<<<<<<< HEAD
 		$this->setData($results[0]);
 		
+=======
+		$row = $results[0];
+
+		$this->setIdusuario($row['idusuario']);
+		$this->setDeslogin($row['deslogin']);
+		$this->setDessenha($row['dessenha']);
+		$this->setDtcadastro(new DateTime($row['dtcadastro']));
+>>>>>>> 6563b7899245bf5e6c551b59fdd98751117d03c5
 	}
 
 }
@@ -78,15 +87,25 @@ public function login($login, $password){
 
 	if (count($results) > 0){
 
+<<<<<<< HEAD
 		$this->setData($results[0]);
 
 		
+=======
+		$row = $results[0];
+
+		$this->setIdusuario($row['idusuario']);
+		$this->setDeslogin($row['deslogin']);
+		$this->setDessenha($row['dessenha']);
+		$this->setDtcadastro(new DateTime($row['dtcadastro']));
+>>>>>>> 6563b7899245bf5e6c551b59fdd98751117d03c5
 	} else {
 
 		throw new Exception("Login e/ou senha invalidos.");
 		
 	}
 
+<<<<<<< HEAD
 }
 
 
@@ -118,6 +137,8 @@ public function __construct($login = "", $password = ""){
 
 	$this->setDeslogin($login);
 	$this->setDessenha($password);
+=======
+>>>>>>> 6563b7899245bf5e6c551b59fdd98751117d03c5
 
 
 }
