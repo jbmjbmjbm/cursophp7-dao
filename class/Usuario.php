@@ -45,14 +45,6 @@ class Usuario{
 
 
 		$this->setData($results[0]);
-
-		$row = $results[0];
-
-		$this->setIdusuario($row['idusuario']);
-		$this->setDeslogin($row['deslogin']);
-		$this->setDessenha($row['dessenha']);
-		$this->setDtcadastro(new DateTime($row['dtcadastro']));
-
 	}
 
 }
@@ -87,15 +79,7 @@ public function login($login, $password){
 	if (count($results) > 0){
 
 		$this->setData($results[0]);
-
 		
-		$row = $results[0];
-
-		$this->setIdusuario($row['idusuario']);
-		$this->setDeslogin($row['deslogin']);
-		$this->setDessenha($row['dessenha']);
-		$this->setDtcadastro(new DateTime($row['dtcadastro']));
-
 	} else {
 
 		throw new Exception("Login e/ou senha invalidos.");
@@ -129,6 +113,25 @@ public function insert(){
 	}
 
 }
+
+
+public function update($login, $password){
+
+	$this->setDeslogin($login);
+	$this->setDessenha($password);	
+
+	$sql = new Sql();
+
+	$sql->query("UPDATE tb_usuarios SET deslogin = :LOGIN, dessenha = :PASSWORD WHERE idusuario =:ID",array(
+		':LOGIN'=>$this->getDeslogin(),
+		':PASSWORD'=>$this->getDessenha(),
+		':ID'=>$this->getIdusuario()
+
+	));
+
+
+}
+
 
 public function __construct($login = "", $password = ""){
 

@@ -48,16 +48,18 @@ require_once("config.php");
 
 // insert de um aluno novo
 
-$aluno = new Usuario("aluno", "@alun0");
+//$aluno = new Usuario("aluno teste", "@lunoteste");
 
-$aluno->insert();
+//$aluno->insert();
 
-echo $aluno;
+//echo $aluno;
 
 $usuario = new Usuario();
-$usuario->login("teste", "@teste");
+
+$usuario->loadbyID(32);
+
+$usuario->update("professor", "p0fessor");
 
 echo $usuario;
-
 
 ?>
