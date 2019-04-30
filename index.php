@@ -54,12 +54,19 @@ require_once("config.php");
 
 //echo $aluno;
 
+
+/*
+Altera um usuário
+
 $usuario = new Usuario();
-
-$usuario->loadbyID(32);
-
-$usuario->update("professor", "p0fessor");
-
+$usuario->loadbyID(25);
+$usuario->update("Torrada", "hoje");
 echo $usuario;
+*/
+$usuario = new Usuario();
+$usuario->loadbyID(21);
+$usuario->delete();
+echo $usuario;
+
 
 ?>
